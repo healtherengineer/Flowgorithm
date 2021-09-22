@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-09 02:49:43 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0wOTswMjo0NToyMyDDllM7MjkyNw=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0wOTswMjo0OTo0MyDDllM7MTszMDQx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="onluktaban, kalan, i, sonuc" type="Integer" array="False" size=""/>
+            <assign variable="sonuc" expression="0"/>
+            <assign variable="i" expression="0"/>
+            <input variable="onluktaban"/>
+            <while expression="onluktaban&gt;0">
+                <assign variable="kalan" expression="onluktaban mod 2"/>
+                <assign variable="onluktaban" expression="onluktaban/2"/>
+                <assign variable="sonuc" expression="sonuc+kalan*10^i"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="sonuc" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

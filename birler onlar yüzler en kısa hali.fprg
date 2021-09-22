@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-31 11:19:44 &#214;&#214;"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0zMTsxMTowOToyNiDDlsOWOzMwNTU="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0zMTsxMToxOTo0NCDDlsOWOzE7MzE2NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, y&#252;zler, birler, onlar" type="Integer" array="False" size=""/>
+            <input variable="sayi"/>
+            <assign variable="y&#252;zler" expression="sayi/100"/>
+            <assign variable="sayi" expression="sayi-(y&#252;zler*100)"/>
+            <assign variable="onlar" expression="sayi/10"/>
+            <assign variable="sayi" expression="sayi-(onlar*10)"/>
+            <assign variable="birler" expression="sayi"/>
+            <output expression="&quot;y&#252;zler basamag&#305; : &quot;&amp;y&#252;zler" newline="True"/>
+            <output expression="&quot;Onlar basamag&#305; : &quot;&amp;onlar" newline="True"/>
+            <output expression="&quot;Birler basamag&#305; : &quot; &amp;birler" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-04 04:42:31 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0xNzswNToyMTo1MSDDllM7MjkyMw=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0wNDswNDo0MjozMSDDllM7MjszMDI5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="b, a, i, t" type="Real" array="False" size=""/>
+            <assign variable="t" expression="0"/>
+            <input variable="b"/>
+            <for variable="i" start="1" end="99" direction="inc" step="1">
+                <if expression="i^3-i^2=b">
+                    <then>
+                        <assign variable="t" expression="t+1"/>
+                        <output expression="i" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="t" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

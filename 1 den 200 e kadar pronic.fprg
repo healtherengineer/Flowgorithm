@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-02 12:44:50 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0wMjsxMjoxNzowMiDDllM7MjkxNw=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0wMjsxMjo0NDo1MCDDllM7MTszMDI4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j, b" type="Real" array="False" size=""/>
+            <for variable="i" start="1" end="200" direction="inc" step="1">
+                <for variable="j" start="1" end="i" direction="inc" step="1">
+                    <if expression="i=j*(j+1)">
+                        <then>
+                            <output expression="&quot;pronictir.&quot;&amp;i" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

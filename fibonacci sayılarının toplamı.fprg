@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-07 09:14:06 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0wNzswOTowODozMyDDllM7MjkzMg=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0wNzswOToxNDowNiDDllM7MTszMDM3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, top" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <declare name="fib" type="Integer" array="True" size="n"/>
+            <assign variable="fib[1]" expression="0"/>
+            <assign variable="fib[2]" expression="1"/>
+            <assign variable="top" expression="1"/>
+            <for variable="i" start="3" end="n-1" direction="inc" step="1">
+                <assign variable="fib[i]" expression="fib[i-1]+fib[i-2]"/>
+                <assign variable="top" expression="top+fib[i]"/>
+            </for>
+            <output expression="&quot;serinin toplam&#305; : &quot; &amp;top" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

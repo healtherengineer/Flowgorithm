@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-22 09:33:15 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0yMjswNzozNjo1OSDDllM7MjkzNQ=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0yMjswOTozMzoxNSDDllM7MzszMDM2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, k, c" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <while expression="a&gt;9">
+                <assign variable="c" expression="1"/>
+                <while expression="a&gt;0">
+                    <assign variable="k" expression="a mod 10"/>
+                    <assign variable="a" expression="(a-k)/10"/>
+                    <assign variable="c" expression="c*k"/>
+                </while>
+                <assign variable="a" expression="c"/>
+            </while>
+            <output expression="a" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

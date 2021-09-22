@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-03 10:59:19 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0wMzsxMDo0NzozMCDDllM7MjkyMA=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0wMzsxMDo1OToxOSDDllM7MTszMDM4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ege" type="Integer" array="True" size="9"/>
+            <declare name="s1, c, k, i, sonuc" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="0"/>
+            <assign variable="sonuc" expression="0"/>
+            <input variable="s1"/>
+            <while expression="s1&gt;0">
+                <assign variable="k" expression="s1 mod 10"/>
+                <assign variable="s1" expression="(s1-k)/10"/>
+                <assign variable="c" expression="c+1"/>
+                <assign variable="ege[c]" expression="k"/>
+            </while>
+            <for variable="i" start="1" end="c" direction="inc" step="1">
+                <assign variable="sonuc" expression="ege[i]*2^(i-1)+sonuc"/>
+            </for>
+            <output expression="sonuc" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

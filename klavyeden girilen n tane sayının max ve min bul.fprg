@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-31 03:06:25 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0yNTswMzoxODo1NCDDllM7MjkyOQ=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0zMTswMzowNjoyNSDDllM7MjszMDMw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="eb, ek, n, i, sayi" type="Integer" array="False" size=""/>
+            <output expression="&quot;Kac tane say&#305; girece&#287;inizi giriniz : &quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="&quot;sayilarinizi girmeye baslay&#305;n : &quot;" newline="True"/>
+            <input variable="sayi"/>
+            <assign variable="eb" expression="sayi"/>
+            <assign variable="ek" expression="sayi"/>
+            <for variable="i" start="1" end="n-1" direction="inc" step="1">
+                <input variable="sayi"/>
+                <if expression="sayi&gt;eb">
+                    <then>
+                        <assign variable="eb" expression="sayi"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="sayi&lt;ek">
+                    <then>
+                        <assign variable="ek" expression="sayi"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="eb" newline="True"/>
+            <output expression="ek" newline="True"/>
+            <output expression="&quot;girilen sayi adedi : &quot; &amp;n" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

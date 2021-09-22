@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-31 10:36:14 &#214;&#214;"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0zMTsxMDoyNjozNiDDlsOWOzMwNTQ="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0zMTsxMDozNjoxNCDDlsOWOzE7MzE1OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, b, s, toplam" type="Real" array="False" size=""/>
+            <assign variable="toplam" expression="0"/>
+            <for variable="i" start="1" end="15" direction="inc" step="1">
+                <assign variable="b" expression="i+1"/>
+                <assign variable="s" expression="i/b"/>
+                <assign variable="toplam" expression="s+toplam"/>
+                <if expression="s=15/16">
+                    <then>
+                        <output expression="&quot;15. terim : &quot; &amp;s &amp;&quot;d&#305;r&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

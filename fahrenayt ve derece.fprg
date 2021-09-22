@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-09 03:33:25 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0yMTswNzo1OTo0NSDDllM7MjkzNA=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0wOTswMzozMzoyNSDDllM7MjszMDM2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fahrenayt, santigrat, secim, donusumfdenc, donusumcdenf" type="Real" array="False" size=""/>
+            <output expression="&quot;fahrenayt i&#231;in 1 e santigrat i&#231;in 2 ye bas&#305;n&#305;z : &quot;" newline="True"/>
+            <input variable="secim"/>
+            <if expression="secim=1">
+                <then>
+                    <output expression="&quot; fahrenayt degerini giriniz  :  &quot;" newline="True"/>
+                    <input variable="fahrenayt"/>
+                    <assign variable="donusumfdenc" expression="(fahrenayt-32)/1.8"/>
+                    <output expression="donusumfdenc" newline="True"/>
+                </then>
+                <else>
+                    <if expression="secim=2">
+                        <then>
+                            <output expression="&quot;derece degerini giriniz : &quot;" newline="True"/>
+                            <input variable="santigrat"/>
+                            <assign variable="donusumcdenf" expression="(1.8*santigrat)+32"/>
+                            <output expression="donusumcdenf" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;adam ak&#305;ll&#305; secim yap&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

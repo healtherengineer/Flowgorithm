@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-04 02:59:06 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0wNDswNjo1Mjo0NCDDllM7MjkyNg=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0wNDswMjo1OTowNiDDllM7MjszMDM3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, tekT, tekC, ciftKT, i" type="Real" array="False" size=""/>
+            <output expression="&quot;N degerini giriniz : &quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="tekT" expression="0"/>
+            <assign variable="tekC" expression="1"/>
+            <assign variable="ciftKT" expression="0"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <if expression="i mod 2==0">
+                    <then>
+                        <assign variable="ciftKT" expression="ciftKT+i*i"/>
+                    </then>
+                    <else>
+                        <assign variable="tekC" expression="tekC*i"/>
+                        <assign variable="tekT" expression="tekT+i"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;Tek sayilarin carpimi :  &quot; &amp; tekC" newline="True"/>
+            <output expression="&quot;Tek sayilarin toplami : &quot; &amp; tekT" newline="True"/>
+            <output expression="&quot;Cift sayilarin karelerinin toplami : &quot; &amp;ciftKT" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

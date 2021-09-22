@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-03 01:05:54 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0wMzsxMjoxODowNiDDllM7MjkyMw=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0wMzswMTowNTo1NCDDllM7MjszMDI5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j, c" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="0"/>
+            <for variable="i" start="2" end="100" direction="inc" step="1">
+                <for variable="j" start="1" end="i" direction="inc" step="1">
+                    <if expression="i%j=0">
+                        <then>
+                            <assign variable="c" expression="c+1"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <if expression="c&lt;3">
+                    <then>
+                        <output expression="i" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="c" expression="0"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

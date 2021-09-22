@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-09 02:24:20 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0wNzswODo1NjozOCDDllM7MjkzOQ=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0wOTswMjoyNDoyMCDDllM7MjszMDMw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <declare name="fib" type="Integer" array="True" size="n"/>
+            <assign variable="fib[0]" expression="0"/>
+            <assign variable="fib[1]" expression="0"/>
+            <assign variable="fib[2]" expression="1"/>
+            <output expression="fib[1]" newline="True"/>
+            <output expression="fib[2]" newline="True"/>
+            <for variable="i" start="3" end="n" direction="inc" step="1">
+                <assign variable="fib[i]" expression="fib[i-1]+fib[i-2]"/>
+                <output expression="fib[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

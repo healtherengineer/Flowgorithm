@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-22 08:23:27 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0yMjswODoxMDo1NyDDllM7MjkyNg=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0yMjswODoyMzoyNyDDllM7MTszMDM1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, x, y, r, l, dpay, dpayda" type="Real" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <input variable="x"/>
+            <input variable="y"/>
+            <input variable="r"/>
+            <assign variable="dpay" expression="(a*x)+(b*y)+c"/>
+            <assign variable="dpayda" expression="(a^2+b^2)^(1/2)"/>
+            <call expression="mutlak(dpay)"/>
+            <assign variable="l" expression="dpay/dpayda"/>
+            <if expression="l=r">
+                <then>
+                    <output expression="&quot;TEGET&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="l&gt;r">
+                        <then>
+                            <output expression="&quot;KESME YOK&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;2 NOKTADAN KESME VAR &quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="mutlak" type="Real" variable="dpay">
+        <parameters>
+            <parameter name="dpay" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="x" type="Real" array="False" size=""/>
+            <assign variable="x" expression="dpay"/>
+            <if expression="x&lt;0">
+                <then>
+                    <assign variable="x" expression="x*-1"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

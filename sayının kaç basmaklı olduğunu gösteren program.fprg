@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-31 11:33:44 &#214;&#214;"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0zMTsxMToxOTo0NyDDlsOWOzMwNTk="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0zMTsxMTozMzo0NCDDlsOWOzE7MzE2MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, basamak" type="Integer" array="False" size=""/>
+            <input variable="sayi"/>
+            <assign variable="basamak" expression="1"/>
+            <if expression="sayi=sayi mod 10">
+                <then>
+                    <assign variable="basamak" expression="basamak-1"/>
+                </then>
+                <else/>
+            </if>
+            <do expression="sayi&gt;=10">
+                <assign variable="sayi" expression="sayi/10"/>
+                <assign variable="basamak" expression="basamak+1"/>
+            </do>
+            <output expression="&quot;basamak say&#305;s&#305; : &quot;&amp;basamak" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

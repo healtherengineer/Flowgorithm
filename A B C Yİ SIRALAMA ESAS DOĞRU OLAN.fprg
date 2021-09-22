@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-17 04:41:44 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0xNzswNDoyNDoxOSDDllM7MjkyOQ=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0xNzswNDo0MTo0NCDDllM7MTszMDM0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, C" type="Integer" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <input variable="C"/>
+            <if expression="A&gt;B">
+                <then>
+                    <if expression="A&gt;C">
+                        <then>
+                            <if expression="B&gt;C">
+                                <then>
+                                    <output expression="&quot;A,B,C&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;A,C,B&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;C,A,B&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="B&gt;C">
+                        <then>
+                            <if expression="A&gt;C">
+                                <then>
+                                    <output expression="&quot;B,A,C&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;B,C,A&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;C,B,A&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-09 03:29:15 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0yMTswODoyMjoxMyDDllM7MjkyMA=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0wOTswMzoyOToxNSDDllM7MjszMDQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="maas, cocuk, help" type="Integer" array="False" size=""/>
+            <input variable="maas"/>
+            <input variable="cocuk"/>
+            <if expression="cocuk=1">
+                <then>
+                    <assign variable="help" expression="maas*(5/100)"/>
+                </then>
+                <else>
+                    <if expression="cocuk=2">
+                        <then>
+                            <assign variable="help" expression="maas*(10/100)"/>
+                        </then>
+                        <else>
+                            <if expression="cocuk=3 or cocuk&gt;3">
+                                <then>
+                                    <assign variable="help" expression="maas*(15/100)"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="help" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

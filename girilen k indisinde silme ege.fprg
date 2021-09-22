@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-10 03:22:49 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0xMDswMzoxNTowNSDDllM7MjkxNw=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0xMDswMzoyMjo0OSDDllM7MTszMDMx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, k, i" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <input variable="k"/>
+            <declare name="a" type="Integer" array="True" size="n*2"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <input variable="a[i]"/>
+            </for>
+            <assign variable="a[k]" expression="a[k+1]"/>
+            <for variable="i" start="n" end="k" direction="dec" step="1">
+                <assign variable="a[i+1]" expression="a[i]"/>
+            </for>
+            <output expression="a[k]" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

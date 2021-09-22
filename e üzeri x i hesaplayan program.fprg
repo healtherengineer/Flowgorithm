@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-22 08:36:16 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0yMjswODoyMzozMyDDllM7MjkyNA=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0yMjswODozNjoxNiDDllM7MTszMDM3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, i, top, pay, payda" type="Real" array="False" size=""/>
+            <input variable="x"/>
+            <assign variable="top" expression="1"/>
+            <for variable="i" start="1" end="9" direction="inc" step="1">
+                <assign variable="pay" expression="x^i"/>
+                <call expression="fakt&#246;riyel(i)"/>
+                <assign variable="payda" expression="fakt&#246;riyel(i)"/>
+                <assign variable="top" expression="top+(pay/payda)"/>
+            </for>
+            <output expression="top" newline="True"/>
+        </body>
+    </function>
+    <function name="fakt&#246;riyel" type="Real" variable="y">
+        <parameters>
+            <parameter name="z" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="y, i" type="Real" array="False" size=""/>
+            <assign variable="y" expression="1"/>
+            <for variable="i" start="z" end="2" direction="dec" step="1">
+                <assign variable="y" expression="y*i"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

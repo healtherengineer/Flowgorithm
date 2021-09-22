@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-10 01:54:25 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0xMDswMTo0NzozNSDDllM7MjkyMw=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0xMDswMTo1NDoyNSDDllM7MTszMDI4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="eb, ek, i, n" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <declare name="a" type="Integer" array="True" size="n+1"/>
+            <input variable="a[1]"/>
+            <assign variable="ek" expression="a[1]"/>
+            <assign variable="eb" expression="a[1]"/>
+            <for variable="i" start="2" end="n" direction="inc" step="1">
+                <input variable="a[i]"/>
+                <if expression="a[i]&gt;eb">
+                    <then>
+                        <assign variable="eb" expression="a[i]"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="a[i]&lt;ek">
+                    <then>
+                        <assign variable="ek" expression="a[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="ek" newline="True"/>
+            <output expression="eb" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

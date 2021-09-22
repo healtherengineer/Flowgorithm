@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-09 09:25:29 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0wOTswOToyMjozNCDDllM7MjkzMQ=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0wOTswOToyNToyOSDDllM7MTszMDQ2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, i, min" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <if expression="a&gt;b">
+                <then>
+                    <assign variable="min" expression="b"/>
+                </then>
+                <else>
+                    <assign variable="min" expression="a"/>
+                </else>
+            </if>
+            <for variable="i" start="min" end="1" direction="dec" step="1">
+                <if expression="a mod i=0 and b mod i=0">
+                    <then>
+                        <output expression="i" newline="True"/>
+                        <assign variable="i" expression="1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

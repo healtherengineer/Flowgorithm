@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-10 02:44:21 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0xMDswMjoyNzo0OCDDllM7MjkyNg=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0xMDswMjo0NDoyMSDDllM7MTszMDI0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, k, i" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <input variable="k"/>
+            <declare name="a" type="Integer" array="True" size="n*2"/>
+            <assign variable="a[n+2]" expression="0"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <input variable="a[i]"/>
+            </for>
+            <for variable="i" start="n" end="k" direction="dec" step="1">
+                <if expression="i=k">
+                    <then>
+                        <assign variable="a[i]" expression="a[n+2]"/>
+                    </then>
+                    <else>
+                        <assign variable="a[i+1]" expression="a[i]"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="a[k]" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

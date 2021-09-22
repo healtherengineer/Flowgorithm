@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-21 09:57:16 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0yMTswODo1Mzo0MiDDllM7MjkyNg=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0yMTswOTo1NzoxNiDDllM7MTszMDQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, t, i, onlar, birler, y&#252;zler, a" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <for variable="i" start="2" end="0" direction="dec" step="1">
+                <assign variable="t" expression="n/(10^i)"/>
+                <assign variable="a" expression="n mod (10^i)"/>
+                <if expression="a&gt;10 and a&lt;99">
+                    <then>
+                        <assign variable="y&#252;zler" expression="t"/>
+                        <output expression="&quot;y&#252;zler : &quot; &amp; y&#252;zler" newline="True"/>
+                        <assign variable="n" expression="a"/>
+                    </then>
+                    <else>
+                        <if expression="a&gt;0 and a&lt;10">
+                            <then>
+                                <assign variable="onlar" expression="t"/>
+                                <output expression="&quot;onlar : &quot; &amp;onlar" newline="True"/>
+                                <assign variable="n" expression="a"/>
+                            </then>
+                            <else>
+                                <if expression="a=0">
+                                    <then>
+                                        <assign variable="birler" expression="t"/>
+                                        <output expression="&quot;birler : &quot; &amp; birler" newline="True"/>
+                                        <assign variable="n" expression="a"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

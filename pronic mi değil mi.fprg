@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-02 12:16:59 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0wMjsxMjoxMDozOSDDllM7MjkyMA=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0wMjsxMjoxNjo1OSDDllM7MTszMDM2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, a, b, c" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <assign variable="b" expression="a^(1/2)"/>
+            <for variable="i" start="1" end="b" direction="inc" step="1">
+                <if expression="a=i*(i+1)">
+                    <then>
+                        <output expression="&quot;Girilen &quot;&amp;a&amp;&quot;sayisi pronic dir.&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

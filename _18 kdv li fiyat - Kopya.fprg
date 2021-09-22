@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-21 07:59:43 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0yMTswNzo1Nzo0NiDDllM7MjkzMw=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0yMTswNzo1OTo0MyDDllM7MTszMDQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fiyat, kdv, kdvfiyat" type="Integer" array="False" size=""/>
+            <input variable="fiyat"/>
+            <assign variable="kdv" expression="fiyat*(18/100)"/>
+            <assign variable="kdvfiyat" expression="fiyat+kdv"/>
+            <output expression="&quot;&#252;r&#252;n&#252;n kdv li fiyat&#305; : &quot;" newline="True"/>
+            <output expression="kdvfiyat" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

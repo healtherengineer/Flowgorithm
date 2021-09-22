@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-21 08:34:02 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0yMTswODozMDoxMSDDllM7MjkxNw=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0yMTswODozNDowMiDDllM7MTszMDI5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="saat, ucret, yevmiye" type="Integer" array="False" size=""/>
+            <assign variable="ucret" expression="20"/>
+            <output expression="&quot;cal&#305;s&#305;lan sureyi gir : &quot;" newline="True"/>
+            <input variable="saat"/>
+            <if expression="saat&lt;40">
+                <then>
+                    <assign variable="yevmiye" expression="saat*20"/>
+                </then>
+                <else>
+                    <assign variable="yevmiye" expression="(saat*2)*20"/>
+                </else>
+            </if>
+            <output expression="yevmiye" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

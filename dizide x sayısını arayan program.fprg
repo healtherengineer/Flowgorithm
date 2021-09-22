@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-10 05:13:03 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0xMDswNTowNzowNCDDllM7MjkxOQ=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0xMDswNToxMzowMyDDllM7MTszMDIz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, n, k, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Aramak istediginiz sayiyi giriniz :&quot;" newline="True"/>
+            <input variable="x"/>
+            <output expression="&quot;kac tane sayi girmek istediginizi giriniz :  &quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="ege" type="Integer" array="True" size="n+1"/>
+            <assign variable="k" expression="0"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <input variable="ege[i]"/>
+            </for>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <if expression="ege[i]=x">
+                    <then>
+                        <assign variable="k" expression="k+1"/>
+                        <output expression="&quot;dizinin&quot;&amp;i&amp;&quot;. indiste bir tane x bulundu&quot;" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="k=0">
+                <then>
+                    <output expression="&quot;hic x bulunamad&#305;&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="k&amp;&quot; tane x bulundu&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

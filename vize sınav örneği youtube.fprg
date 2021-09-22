@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-10 09:29:49 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0xMDswOToyNjo0MiDDllM7MjkyNg=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0xMDswOToyOTo0OSDDllM7MTszMDQ0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, t" type="Integer" array="False" size=""/>
+            <for variable="i" start="1" end="9" direction="inc" step="1">
+                <if expression="i=6">
+                    <then>
+                        <output expression="(i+1)&amp;&quot;/&quot;&amp;(i+2)" newline="True"/>
+                        <assign variable="i" expression="7"/>
+                    </then>
+                    <else>
+                        <output expression="i&amp;&quot;/&quot;&amp;(i+1)" newline="True"/>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

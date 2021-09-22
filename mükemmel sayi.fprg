@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-04 09:20:57 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0wNDswOToxMzowNyDDllM7MjkyNg=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0wNDswOToyMDo1NyDDllM7MTszMDM3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j, sonuc, n" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="sonuc" expression="0"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <for variable="j" start="1" end="i-1" direction="inc" step="1">
+                    <if expression="i%j=0">
+                        <then>
+                            <assign variable="sonuc" expression="sonuc+j"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <if expression="sonuc=i">
+                    <then>
+                        <output expression="i" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="sonuc" expression="0"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

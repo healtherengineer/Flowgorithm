@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-31 03:15:31 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0yNTswNTozODozNyDDllM7MjkzNA=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0zMTswMzoxNTozMSDDllM7MjszMDI3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, ortam" type="Integer" array="False" size=""/>
+            <assign variable="ortam" expression="0"/>
+            <output expression="&quot;Var olan h&#252;cre sayisini giriniz(n) : &quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="i" start="1" end="10" direction="inc" step="1">
+                <assign variable="ortam" expression="n*2-((n*2)*1/5)+ortam"/>
+                <assign variable="n" expression="ortam"/>
+            </for>
+            <output expression="ortam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

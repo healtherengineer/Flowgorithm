@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-10 09:06:54 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0wMzswNTo0MTo1NCDDllM7MjkyNA=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0xMDswOTowNjo1NCDDllM7NDszMDM4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, c, s1, i, sayac" type="Integer" array="False" size=""/>
+            <input variable="s1"/>
+            <assign variable="c" expression="0"/>
+            <assign variable="a" expression="0"/>
+            <assign variable="sayac" expression="0"/>
+            <for variable="i" start="2" end="s1" direction="inc" step="1">
+                <if expression="s1%i=0">
+                    <then>
+                        <assign variable="c" expression="c+1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="c&lt;2">
+                <then>
+                    <output expression="&quot;girilen ilk say&#305; asald&#305;r&quot;" newline="True"/>
+                    <while expression="sayac&lt;10">
+                        <assign variable="s1" expression="s1+1"/>
+                        <for variable="i" start="2" end="s1" direction="inc" step="1">
+                            <if expression="s1%i=0">
+                                <then>
+                                    <assign variable="a" expression="a+1"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </for>
+                        <if expression="a&lt;2">
+                            <then>
+                                <assign variable="sayac" expression="sayac+1"/>
+                                <output expression="s1" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <assign variable="a" expression="0"/>
+                    </while>
+                </then>
+                <else>
+                    <output expression="&quot;girilen ilk say&#305; asal de&#287;ildir. &quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

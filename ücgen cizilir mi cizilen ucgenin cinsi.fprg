@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-25 02:52:05 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0yNTswMjo0NzowNSDDllM7MjkyNg=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0yNTswMjo0NzowNyDDllM7MTtBc3VzO0RFU0tUT1AtMkpMVlZSNzsyMDE5LTEwLTA0OzA3OjI4OjE2IMOWUztpa2l6a2VuYXIsZXNrZW5hcixjZXNpdGtlbmFyLmZwcmc7OTQyNg=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0yNTswMjo1MjowNSDDllM7MTszMDMw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="k1, k2, k3" type="Integer" array="False" size=""/>
+            <output expression="&quot;k1 degerini gir&quot;" newline="True"/>
+            <input variable="k1"/>
+            <output expression="&quot;k2 degerini gir&quot;" newline="True"/>
+            <input variable="k2"/>
+            <output expression="&quot;k3 degerini gir&quot;" newline="True"/>
+            <input variable="k3"/>
+            <if expression="k1+k2&gt;k3 and k1-k2&lt;k3">
+                <then>
+                    <if expression="k1+k3&gt;k2 and k1-k3&lt;k2">
+                        <then>
+                            <if expression="k2+k3&gt;k1 and k2-k3&lt;k1">
+                                <then/>
+                                <else>
+                                    <output expression="&quot;&#220;cgen cizilemez .&quot;" newline="False"/>
+                                    <breakpoint/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;&#220;cgen cizilemez .&quot;" newline="False"/>
+                            <breakpoint/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;&#220;cgen cizilemez .&quot;" newline="False"/>
+                    <breakpoint/>
+                </else>
+            </if>
+            <if expression="k1=k2">
+                <then>
+                    <if expression="k2=k3">
+                        <then>
+                            <output expression="&quot;Girdiginiz &#252;cgen bir eskenar &#252;cgendir .&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Girdiginiz &#252;cgen ikiz kenar d&#305;r&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="k1=k3">
+                        <then>
+                            <if expression="k1&lt;&gt;k2">
+                                <then>
+                                    <output expression="&quot;girdiginiz ucgen bir ikiz kenard&#305;r&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </then>
+                        <else/>
+                    </if>
+                    <if expression="k2=k3">
+                        <then>
+                            <if expression="k1&lt;&gt;k2">
+                                <then>
+                                    <output expression="&quot;girdiginiz ucgen ikizkenard&#305;r&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </then>
+                        <else/>
+                    </if>
+                    <if expression="k1&lt;&gt;k2">
+                        <then>
+                            <if expression="k3&lt;&gt;k2">
+                                <then>
+                                    <if expression="k1&lt;&gt;k3">
+                                        <then>
+                                            <output expression="&quot;Girdiginiz ucgen bir cesitkenar ucgendir&quot;" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </then>
+                                <else/>
+                            </if>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

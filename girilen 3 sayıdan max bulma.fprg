@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-25 03:12:56 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0yNTswMzowNjoyOCDDllM7MjkyNw=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0yNTswMzoxMjo1NiDDllM7MTszMDMz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, C, MAX" type="Integer" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <input variable="C"/>
+            <assign variable="MAX" expression="A"/>
+            <if expression="MAX&lt;B and B&gt;C">
+                <then>
+                    <assign variable="MAX" expression="B"/>
+                    <output expression="&quot;MAX =&quot;&amp;MAX" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="C&gt;MAX">
+                <then>
+                    <assign variable="MAX" expression="C"/>
+                    <output expression="&quot;MAX =&quot;&amp;MAX" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="MAX&gt;B and MAX&gt;C">
+                <then>
+                    <output expression="&quot;MAX =&quot;&amp;MAX" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

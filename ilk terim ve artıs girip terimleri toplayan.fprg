@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-02 12:56:00 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0wMjsxMjo0NDo1MiDDllM7MjkyMg=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0wMjsxMjo1NjowMCDDllM7MTszMDI2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s1, i, yeni, sonuc, n, art&#305;s" type="Integer" array="False" size=""/>
+            <output expression="&quot;ilk terimi giriniz (s1): &quot;" newline="True"/>
+            <input variable="s1"/>
+            <output expression="&quot;terim say&#305;s&#305;n&#305; giriniz : &quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="&quot;art&#305;s miktar&#305;n&#305; giriniz : &quot;" newline="True"/>
+            <input variable="art&#305;s"/>
+            <assign variable="sonuc" expression="s1"/>
+            <output expression="&quot;1.&quot;&amp;s1" newline="True"/>
+            <for variable="i" start="2" end="n" direction="inc" step="1">
+                <assign variable="yeni" expression="s1+art&#305;s"/>
+                <output expression="i&amp;&quot;.&quot;&amp;yeni" newline="True"/>
+                <assign variable="sonuc" expression="sonuc+yeni"/>
+                <assign variable="s1" expression="yeni"/>
+            </for>
+            <output expression="sonuc" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-09 02:39:15 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0wNzswOToyMDoyMiDDllM7MjkyNA=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0wOTswMjozOToxNSDDllM7MjszMDQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, k, a, c, g" type="Integer" array="False" size=""/>
+            <output expression="&quot;N deger&#351; giriniz :&quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="&quot;K degerini giriniz : &quot;" newline="True"/>
+            <input variable="k"/>
+            <assign variable="c" expression="0"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="g" expression="i"/>
+                <while expression="g&gt;0">
+                    <assign variable="a" expression="g%10"/>
+                    <assign variable="g" expression="(g-a)/10"/>
+                    <if expression="a=k">
+                        <then>
+                            <assign variable="c" expression="c+1"/>
+                        </then>
+                        <else/>
+                    </if>
+                </while>
+                <if expression="c=0">
+                    <then>
+                        <output expression="i" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="c" expression="0"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

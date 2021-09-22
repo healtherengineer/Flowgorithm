@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="MKZ"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-18 09:55:57 &#214;&#214;"/>
+        <attribute name="created" value="TUtaO01LWjsyMDE5LTEwLTE4OzA5OjE4OjE5IMOWw5Y7MjA0OQ=="/>
+        <attribute name="edited" value="TUtaO01LWjsyMDE5LTEwLTE4OzA5OjU1OjU3IMOWw5Y7MjsyMTYx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, s, d, f" type="Integer" array="False" size=""/>
+            <output expression="&quot;kac tane sayi girilcek&quot;" newline="True"/>
+            <input variable="a"/>
+            <assign variable="s" expression="-1"/>
+            <for variable="d" start="1" end="a" direction="inc" step="1">
+                <output expression="d &amp; &quot;. deger&quot;" newline="True"/>
+                <input variable="f"/>
+                <if expression="f mod 2 = 0 &amp;&amp; f &gt; s">
+                    <then>
+                        <assign variable="s" expression="f"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="s = -1">
+                <then>
+                    <output expression="&quot;cift tamsayi yok&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="s" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

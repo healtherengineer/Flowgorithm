@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-11 05:43:02 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0xMTswNToyNDoxNiDDllM7MjkyMQ=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0xMTswNTo0MzowMiDDllM7MTszMDI1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, r" type="Integer" array="False" size=""/>
+            <output expression="&quot;n degeri girinz :&quot;" newline="True"/>
+            <input variable="n"/>
+            <output expression="&quot;r degeri giriniz : &quot;" newline="True"/>
+            <input variable="r"/>
+            <declare name="f1, f2, f3, k" type="Real" array="False" size=""/>
+            <assign variable="f1" expression="fakt&#246;riyel(n)"/>
+            <assign variable="f2" expression="fakt&#246;riyel(r)"/>
+            <assign variable="f3" expression="fakt&#246;riyel(n-r)"/>
+            <comment text="her zaman ama her zaman flowchartlarda parantez i&#231;ine al i&#351;lemleri"/>
+            <assign variable="k" expression="f1/(f2*f3)"/>
+            <output expression="k" newline="True"/>
+        </body>
+    </function>
+    <function name="fakt&#246;riyel" type="Real" variable="z">
+        <parameters>
+            <parameter name="x" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="z, i" type="Integer" array="False" size=""/>
+            <assign variable="z" expression="1"/>
+            <for variable="i" start="1" end="x" direction="inc" step="1">
+                <assign variable="z" expression="z*i"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

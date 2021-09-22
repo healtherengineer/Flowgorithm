@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-22 08:08:35 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0yMjswODowMDoxMCDDllM7MjkxNA=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0yMjswODowODozNSDDllM7MTszMDM3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y, dr, r, r1, d" type="Real" array="False" size=""/>
+            <input variable="x"/>
+            <input variable="y"/>
+            <input variable="dr"/>
+            <input variable="r"/>
+            <input variable="r1"/>
+            <assign variable="d" expression="(x^2+y^2)^1/2"/>
+            <if expression="d&gt;(r1-dr)">
+                <then>
+                    <output expression="&quot;Tasma var DIS&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="r+dr&gt;dr">
+                        <then>
+                            <output expression="&quot;TASMA var IC&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;TASMA YOK ! &quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-21 08:19:37 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0yMTswODoxMjoxNSDDllM7MjkyMQ=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0yMTswODoxOTozNyDDllM7MTszMDQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, delta, c, x1, x2, deltanew" type="Real" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="delta" expression="(b^2)-(4*a*c)"/>
+            <if expression="delta &gt; 0 or delta=0">
+                <then>
+                    <assign variable="deltanew" expression="delta^(1/2)"/>
+                    <assign variable="x1" expression="(-b+deltanew)/2*a"/>
+                    <assign variable="x2" expression="(-b-deltanew)/2*a"/>
+                    <output expression="&quot;denklemin kokleri : &quot;" newline="True"/>
+                    <output expression="x1" newline="True"/>
+                    <output expression="x2" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;delta 0 dan kucuk oldugundan dolay&#305; kok yoktur.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

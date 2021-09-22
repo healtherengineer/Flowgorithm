@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="MKZ"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-11 09:00:41 &#214;&#214;"/>
+        <attribute name="created" value="TUtaO01LWjsyMDE5LTExLTEwOzEwOjI5OjI1IMOWUzsxOTAy"/>
+        <attribute name="edited" value="TUtaO01LWjsyMDE5LTExLTExOzA5OjAwOjQxIMOWw5Y7NjsyMTQy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Bir Deger Giriniz&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="fib" type="Integer" array="True" size="n"/>
+            <assign variable="fib[0]" expression="1"/>
+            <assign variable="fib[1]" expression="1"/>
+            <assign variable="i" expression="1"/>
+            <while expression="fib[i] &lt; n">
+                <assign variable="i" expression="i+1"/>
+                <assign variable="fib[i]" expression="fib[i-1] + fib[i-2]"/>
+            </while>
+            <while expression="n &gt; 0">
+                <if expression="fib[i] &lt;= n">
+                    <then>
+                        <assign variable="n" expression="n - fib[i]"/>
+                        <output expression="fib[i]" newline="True"/>
+                    </then>
+                    <else>
+                        <assign variable="i" expression="i-1"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

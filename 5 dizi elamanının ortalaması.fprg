@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-10 01:44:03 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0xMDswMTo0MDowMiDDllM7MjkxMA=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0xMDswMTo0NDowMyDDllM7MTszMDIz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, top, ort" type="Integer" array="False" size=""/>
+            <assign variable="top" expression="0"/>
+            <declare name="sayi" type="Integer" array="True" size="6"/>
+            <for variable="i" start="1" end="5" direction="inc" step="1">
+                <input variable="sayi[i]"/>
+                <assign variable="top" expression="top+sayi[i]"/>
+            </for>
+            <assign variable="ort" expression="top/5"/>
+            <output expression="ort" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

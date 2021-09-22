@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-09-27 08:21:21 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0wOS0yNzswODoxODowNSDDllM7Mjk0MA=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0wOS0yNzswODoyMToyMSDDllM7MTszMDQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <if expression="a&gt;0">
+                <then>
+                    <output expression="&quot;+&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="a&lt;0">
+                        <then>
+                            <output expression="&quot;-&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;say&#305; s&#305;f&#305;rd&#305;r&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

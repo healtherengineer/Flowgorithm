@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-31 11:45:22 &#214;&#214;"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0yMTswNzoyODowMCDDllM7MjkyMQ=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0zMTsxMTo0NToyMiDDlsOWOzI7MzE2MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, sayi, toplam" type="Integer" array="False" size=""/>
+            <assign variable="toplam" expression="0"/>
+            <for variable="i" start="1" end="10" direction="inc" step="1">
+                <input variable="sayi"/>
+                <if expression="sayi mod 2=0">
+                    <then>
+                        <assign variable="toplam" expression="toplam + sayi"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="toplam=0">
+                <then>
+                    <output expression="&quot;Hic cift say&#305; girmediniz. &quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;cift sayilarin toplam&#305; : &quot;" newline="True"/>
+            <output expression="toplam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

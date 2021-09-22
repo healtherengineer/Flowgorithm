@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="MKZ"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-01 06:31:07 &#214;S"/>
+        <attribute name="created" value="TUtaO01LWjsyMDE5LTEwLTAxOzA1OjA4OjI5IMOWUzsxOTA2"/>
+        <attribute name="edited" value="TUtaO01LWjsyMDE5LTEwLTAxOzA2OjAzOjM2IMOWUzsxO01LWjtNS1o7MjAxOS0xMC0wMTswMzoxODo0NyDDllM7T0RFVi5mcHJnOzQ4MTA="/>
+        <attribute name="edited" value="TUtaO01LWjsyMDE5LTEwLTAxOzA2OjE3OjQwIMOWUzsxO01LWjtNS1o7MjAxOS0xMC0wMTswMzoxODo0NyDDllM7T0RFViBWMi5mcHJnOzQ5Nzg="/>
+        <attribute name="edited" value="TUtaO01LWjsyMDE5LTEwLTAxOzA2OjMxOjA3IMOWUzs5OzIwMTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, Z, C, O, K" type="Integer" array="False" size=""/>
+            <output expression="&quot;TAM BOLENLERINI HESAPLAMAK ISTEDIGINIZ DEGERI GIRINIZ&quot;" newline="True"/>
+            <input variable="A"/>
+            <assign variable="C" expression="0"/>
+            <assign variable="O" expression="0"/>
+            <for variable="Z" start="2" end="A&#13;&#10;" direction="inc" step="1">
+                <assign variable="C" expression="C+1"/>
+                <if expression="A%Z==0">
+                    <then>
+                        <for variable="K" start="1" end="A/Z" direction="inc" step="1">
+                            <assign variable="C" expression="C+1"/>
+                            <if expression="A mod K = 0">
+                                <then>
+                                    <output expression="K" newline="True"/>
+                                    <assign variable="O" expression="O+1"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </for>
+                        <output expression="A" newline="True"/>
+                        <output expression="&quot;BOLEN SAYISI : &quot; &amp; O+1" newline="True"/>
+                        <output expression="&quot;ISLEM SAYISI : &quot; &amp; C" newline="True"/>
+                        <assign variable="Z" expression="A"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

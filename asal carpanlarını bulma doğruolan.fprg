@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-09 04:03:33 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0wOTswMzo1MDoxMCDDllM7MjkyMA=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0wOTswNDowMzozMyDDllM7MTszMDMy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi, i, j, c" type="Integer" array="False" size=""/>
+            <input variable="sayi"/>
+            <assign variable="c" expression="0"/>
+            <for variable="i" start="2" end="sayi" direction="inc" step="1">
+                <if expression="sayi mod i=0">
+                    <then>
+                        <for variable="j" start="2" end="i" direction="inc" step="1">
+                            <if expression="i mod j=0">
+                                <then>
+                                    <assign variable="c" expression="c+1"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </for>
+                        <if expression="c&lt;2">
+                            <then>
+                                <output expression="i" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                        <assign variable="c" expression="0"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

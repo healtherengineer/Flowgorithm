@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-07 03:07:54 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0yMjswNzozMjoyMSDDllM7MjkyMA=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMS0wNzswMzowNzo1NCDDllM7MjszMDM3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, k, i" type="Real" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <assign variable="k" expression="0"/>
+            <while expression="a&gt;b">
+                <assign variable="a" expression="a-b"/>
+                <assign variable="k" expression="k+1"/>
+            </while>
+            <output expression="k" newline="True"/>
+            <output expression="&quot;kalan deger : &quot;&amp;a" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

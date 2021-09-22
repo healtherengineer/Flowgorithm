@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-10-25 04:22:13 &#214;S"/>
+        <attribute name="created" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0yNTswNDoxNTo1NCDDllM7MjkyNw=="/>
+        <attribute name="edited" value="QXN1cztERVNLVE9QLTJKTFZWUjc7MjAxOS0xMC0yNTswNDoyMjoxMyDDllM7MTszMDI4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="harf" type="String" array="False" size=""/>
+            <do expression="harf!=&quot;b&quot;">
+                <input variable="harf"/>
+                <if expression="harf=&quot;s&quot;">
+                    <then>
+                        <output expression="&quot;sat&#305;r atla&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="harf" newline="True"/>
+                    </else>
+                </if>
+            </do>
+        </body>
+    </function>
+</flowgorithm>
